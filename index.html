@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pallindrome Check</title>
+  </head>
+  <body>
+    <h3>Pallindrome Check</h3>
+    <form id="check_pallindrome" onsubmit="checkfunc(event)">
+      <input
+        name="input_str"
+        type="text"
+        placeholder="Enter value to check  whether it is pallindrome or not"
+        required
+      />
+      <label>
+        <input type="radio" name="str_type" value="string" required /> String
+      </label>
+      <label>
+        <input type="radio" name="str_type" value="number" required />Number
+      </label>
+      <input type="submit" value="Check" />
+    </form>
+
+    <p id="result"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
